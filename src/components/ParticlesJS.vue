@@ -17,17 +17,17 @@
           particlesJS('particles-js', {
             'particles': {
               'number': {
-                'value': 80,
+                'value': 77,
                 'density': {
                   'enable': true,
-                  'value_area': 800
+                  'value_area': 1300
                 }
               },
               'color': {
                 'value': '#ffffff'
               },
               'shape': {
-                'type': 'circle',
+                'type': 'edge',
                 'stroke': {
                   'width': 0,
                   'color': '#000000'
@@ -52,25 +52,25 @@
                 }
               },
               'size': {
-                'value': 10,
+                'value': 5,
                 'random': true,
                 'anim': {
                   'enable': false,
-                  'speed': 80,
+                  'speed': 77,
                   'size_min': 0.1,
                   'sync': false
                 }
               },
               'line_linked': {
                 'enable': true,
-                'distance': 300,
+                'distance': 350,
                 'color': '#ffffff',
                 'opacity': 0.4,
-                'width': 2
+                'width': 1.5
               },
               'move': {
                 'enable': true,
-                'speed': 12,
+                'speed': 7,
                 'direction': 'none',
                 'random': false,
                 'straight': false,
@@ -87,18 +87,18 @@
               'detect_on': 'canvas',
               'events': {
                 'onhover': {
-                  'enable': false,
-                  'mode': 'repulse'
+                  'enable': true,
+                  'mode': 'grab'
                 },
                 'onclick': {
                   'enable': true,
-                  'mode': 'push'
+                  'mode': 'repulse'
                 },
                 'resize': true
               },
               'modes': {
                 'grab': {
-                  'distance': 800,
+                  'distance': 250,
                   'line_linked': {
                     'opacity': 1
                   }
@@ -111,8 +111,8 @@
                   'speed': 3
                 },
                 'repulse': {
-                  'distance': 400,
-                  'duration': 0.4
+                  'distance': 350,
+                  'duration': 0.2
                 },
                 'push': {
                   'particles_nb': 4
