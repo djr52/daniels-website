@@ -1,6 +1,6 @@
 # daniels-website
 
-> A Vue.js project
+> A Vue.js project (UNDER CONSTRUCTION!!)
 
 ## Build Setup
 
