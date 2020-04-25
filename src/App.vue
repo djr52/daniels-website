@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <particlesJS></particlesJS>
+    <router-view/>
+    <Navbar></Navbar>
 
     <home></home>
 
@@ -9,11 +11,16 @@
 
 <script>
   import particlesJS from './components/ParticlesJS'
-  import HelloWorld from "./components/HelloWorld";
-  import Home from "./components/Home";
+  //import HelloWorld from "./components/HelloWorld";
+  //import Home from "./components/Home";
+  import Navbar from "./components/Navbar";
+
 export default {
   name: 'app',
-  components:{HelloWorld, Home, particlesJS},
+  components:{
+    particlesJS
+    ,Navbar
+  },
 
   data () {
     return {
