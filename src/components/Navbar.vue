@@ -1,11 +1,19 @@
 <template>
   <div>
-    <h2>Nav Bar</h2>
-    <nav>
-      <router-link class="spacing" v-for="routes in links"
-      v-bind:key="routes.id"
-      :to="`${routes.page}`">{{routes.text}}</router-link>
-    </nav>
+    <b-navbar toggleable="sm" type="light" variant="light">
+      <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+
+      <b-navbar-brand>NavBar</b-navbar-brand>
+
+      <b-collapse id="nav-text-collapse" is-nav>
+      <b-navbar-nav>
+        <router-link class="spacing" v-for="routes in links"
+                     v-bind:key="routes.id"
+                     :to="`${routes.page}`">{{routes.text}}</router-link>
+      </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+
   </div>
 </template>
 

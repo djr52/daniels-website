@@ -14,5 +14,8 @@
 </script>
 
 <style scoped>
+  .intro-box{
+    text-align: center;
+  }
 
 </style>
