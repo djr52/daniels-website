@@ -2,20 +2,18 @@
   <div id="app">
     <particlesJS></particlesJS>
 
-    <div class="intro-box">
-      <img src="./assets/logo.png">
-      <h2>Welcome Visitor</h2>
-       <a href="https://github.com/djr52"><img class="icon-img" src="./assets/github-11-64.png"></a>
-    </div>
+    <home></home>
 
   </div>
 </template>
 
 <script>
   import particlesJS from './components/ParticlesJS'
+  import HelloWorld from "./components/HelloWorld";
+  import Home from "./components/Home";
 export default {
   name: 'app',
-  components:{particlesJS},
+  components:{HelloWorld, Home, particlesJS},
 
   data () {
     return {
