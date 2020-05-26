@@ -1,19 +1,18 @@
 <template>
   <div>
-    <b-navbar toggleable="sm" type="light" variant="light">
+    <b-navbar toggleable="sm" type="dark" variant="info">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-      <b-navbar-brand>NavBar</b-navbar-brand>
+      <b-navbar-brand class="spacing">NavBar</b-navbar-brand>
 
       <b-collapse id="nav-text-collapse" is-nav>
-      <b-navbar-nav>
+      <b-navbar-nav fill="true">
         <router-link class="spacing" v-for="routes in links"
                      v-bind:key="routes.id"
                      :to="`${routes.page}`">{{routes.text}}</router-link>
       </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-
   </div>
 </template>
 
@@ -39,11 +38,12 @@
 </script>
 
 <style scoped>
+
   h2{
     color: black;
   }
   .spacing{
-    Margin-right: 10px;
+    Margin-right: 20px;
 
   }
   div{

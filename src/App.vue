@@ -12,7 +12,7 @@
 <script>
   import particlesJS from './components/ParticlesJS'
   //import HelloWorld from "./components/HelloWorld";
-  //import Home from "./components/Home";
+  import Home from "./components/Home";
   import Navbar from "./components/Navbar";
 
 export default {
@@ -20,6 +20,7 @@ export default {
   components:{
     particlesJS
     ,Navbar
+    ,Home
   },
 
   data () {
@@ -43,30 +44,4 @@ body{
   background-color: black;
 }
 
-h1, h2 {
-  font-weight: normal;
-  color: #FFFFFF;
-}
-.intro-box{
-  //display: inline-block;
-  height: 300px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
-  //text-align: center;
-
-  //background-color: gray;
-
-}
-.icon-img{
-  height: 50px;
-  width: 50px;
-  color: #FFFFFF;
-}
-
-a {
-  color: #42b983;
-}
 </style>

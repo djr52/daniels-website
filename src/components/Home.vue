@@ -16,6 +16,27 @@
 <style scoped>
   .intro-box{
     text-align: center;
+
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  .icon-img{
+    height: 50px;
+    width: 50px;
+    color: #FFFFFF;
+  }
+  h1, h2 {
+    font-weight: normal;
+    color: #FFFFFF;
+  }
+
+
+  a {
+    color: #42b983;
   }
 
 </style>
