@@ -4,15 +4,16 @@
     <router-view/>
     <Navbar></Navbar>
 
-    <home></home>
+
+
 
   </div>
 </template>
 
 <script>
   import particlesJS from './components/ParticlesJS'
-  //import HelloWorld from "./components/HelloWorld";
-  import Home from "./components/Home";
+  import HelloWorld from "./views/HelloWorld";
+  import Home from "./views/Home";
   import Navbar from "./components/Navbar";
 
 export default {
@@ -21,6 +22,8 @@ export default {
     particlesJS
     ,Navbar
     ,Home
+    ,HelloWorld
+
   },
 
   data () {

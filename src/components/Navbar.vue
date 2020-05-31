@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <b-navbar toggleable="sm" type="dark" variant="info">
+  <div class="border-bottom">
+    <b-navbar class="header" fixed="top" toggleable="sm" type="dark" variant="dark">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-      <b-navbar-brand class="spacing">NavBar</b-navbar-brand>
+      <b-navbar-brand class="spacing"><Avatar></Avatar></b-navbar-brand>
 
       <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav fill="true">
@@ -17,11 +17,13 @@
 </template>
 
 <script>
+  import Avatar from "./Avatar";
 
 
     export default {
-        name: "Navbar",
-        data(){
+      name: "Navbar",
+      components: {Avatar},
+      data(){
           return{
             links:[
 
@@ -29,6 +31,11 @@
                 id: 0,
                 text: 'Home',
                 page: '/'
+              },
+              {
+                id: 1,
+                text: 'HelloWorld',
+                page: '/HelloWorld'
               }
 
             ]
@@ -46,8 +53,8 @@
     Margin-right: 20px;
 
   }
-  div{
-    background-color: #FFFFFF;
-    color: black;
+  .header{
+    border-bottom: 5px solid #FFFFFF !important;
   }
+
 </style>

@@ -41,6 +41,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  div{
+    text-align: center;
+
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
 h3 {
   margin: 40px 0 0;
 }
