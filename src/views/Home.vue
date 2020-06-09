@@ -5,7 +5,8 @@
         <img src="../assets/destiny-logo.png">
       </div>
 
-      <h2>Hello! I'm Daniel J Ramirez,</h2>
+
+      <h1>Hello! I'm Daniel J Ramirez,</h1>
       <h2>Welcome to my website!</h2>
       <div class="sm-container">
         <a href="https://github.com/djr52" target="_blank"><img class="icon-img" src="../assets/github-11-64.png"></a>
@@ -40,6 +41,9 @@
     left: 50%;
     transform: translate(-50% , -50%);
     border-width: 3px !important;
+    background-color: rgba(115, 115, 115, 0.7);
+
+
 
   }
   .home-logo{
@@ -54,9 +58,9 @@
     padding: 10px;
 
     width: 70%;
-    background-color: lightslategray;
-    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.6);
 
+    margin: 0px auto;
     border-radius: 10px;
   }
   .icon-img{

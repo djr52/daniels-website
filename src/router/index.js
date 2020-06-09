@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Home from '../views/Home'
 import HelloWorld from "../views/HelloWorld";
+import About from "../views/About";
 
 Vue.use(Router);
 
@@ -10,7 +11,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/Home'
     },
     {
       path: '/home',
@@ -21,6 +22,12 @@ export default new Router({
       path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/About',
+      name: 'About',
+      component: About
+
     }
 
   ]

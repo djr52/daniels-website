@@ -37,6 +37,21 @@
                 id: 1,
                 text: 'HelloWorld',
                 page: '/HelloWorld'
+              },
+              {
+                id: 2,
+                text: 'About',
+                page: '/About'
+              },
+              {
+                id: 3,
+                text: 'Contact',
+                page: '/Contact'
+              },
+              {
+                id: 4,
+                text: 'Resume',
+                page: '/Resume'
               }
 
             ]
