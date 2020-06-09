@@ -1,5 +1,6 @@
 <template>
   <div class="border-bottom">
+    <!--Navbar now fixed to top of the screen using the 'fixed' attribute-->
     <b-navbar class="header" fixed="top" toggleable="sm" type="dark" variant="dark">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
@@ -7,7 +8,7 @@
 
       <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav fill="true">
-        <router-link class="spacing" v-for="routes in links"
+        <router-link class="route-text lead text-light" v-for="routes in links"
                      v-bind:key="routes.id"
                      :to="`${routes.page}`">{{routes.text}}</router-link>
       </b-navbar-nav>
@@ -49,8 +50,9 @@
   h2{
     color: black;
   }
-  .spacing{
+  .route-text{
     Margin-right: 20px;
+    font-family: Oswald;
 
   }
   .header{
