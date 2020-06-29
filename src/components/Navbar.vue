@@ -1,5 +1,5 @@
 <template>
-  <div class="border-bottom">
+  <div>
     <!--Navbar now fixed to top of the screen using the 'fixed' attribute-->
     <b-navbar class="header" fixed="top" toggleable="sm" type="dark" variant="dark">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>

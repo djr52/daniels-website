@@ -1,19 +1,21 @@
 <template>
-  <div>
-    <div class="intro-box border border-light rounded">
-      <div class="home-logo">
-        <img src="../assets/destiny-logo.png">
-      </div>
+  <div class="wrapper">
+    <div class="intro-box">
+      <div class="box-content">
+        <div class="home-logo">
+          <img src="../assets/destiny-logo.png">
+        </div>
 
 
-      <h1>Hello! I'm Daniel J Ramirez,</h1>
-      <h2>Welcome to my website!</h2>
-      <div class="sm-container">
-        <a href="https://github.com/djr52" target="_blank"><img class="icon-img" src="../assets/github-11-64.png"></a>
+        <h1>Hello! I'm Daniel J Ramirez,</h1>
+        <h2>Welcome to my website!</h2>
+        <div class="sm-container">
+          <a href="https://github.com/djr52" target="_blank"><img class="icon-img" src="../assets/github-11-64.png"></a>
+        </div>
+
       </div>
 
     </div>
-
   </div>
 
 </template>
@@ -30,21 +32,21 @@
   Temp font
    */
   @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+  .wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
+  }
   .intro-box{
-    text-align: center;
+    background-color: rgba(115, 115, 115, 0.7);
     height: 420px;
     width: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    border-width: 3px !important;
-    background-color: rgba(115, 115, 115, 0.7);
-
-
-
+  }
+  .box-content{
+    text-align: center;
   }
   .home-logo{
     padding: 20px;
@@ -78,6 +80,10 @@
 
   a {
     color: #42b983;
+  }
+  html,
+  body{
+    height: 100%;
   }
 
 </style>
