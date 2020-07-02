@@ -15,10 +15,15 @@
 </template>
 
 <script>
+  import Navbar from "./components/Navbar";
   import particlesJS from './components/ParticlesJS'
+
   import HelloWorld from "./views/HelloWorld";
   import Home from "./views/Home";
-  import Navbar from "./components/Navbar";
+  import About from "./views/About";
+  import Contact from "./views/Contact";
+  import Resume from "./views/Resume";
+
 
 export default {
   name: 'app',
@@ -27,6 +32,9 @@ export default {
     ,Navbar
     ,Home
     ,HelloWorld
+    ,About
+    ,Contact
+    ,Resume
 
   },
 
@@ -55,20 +63,5 @@ body{
   background-color: black;
 
 }
-/*
-  .slide-fade-enter-active {
-    transition: all .3s ease;
-  }
-  .slide-fade-leave-active {
-    transition: all .8s ease;
-  }
-  .slide-fade-enter, .slide-fade-leave-to
-    /* .slide-fade-leave-active below version 2.1.8 */
-  /* {
-
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  */
 
 </style>
