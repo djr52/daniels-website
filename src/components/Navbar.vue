@@ -35,13 +35,13 @@
               },
               {
                 id: 1,
-                text: 'HelloWorld',
-                page: '/HelloWorld'
+                text: 'Resume',
+                page: '/Resume'
               },
               {
                 id: 2,
-                text: 'About',
-                page: '/About'
+                text: 'Skills',
+                page: '/Skills'
               },
               {
                 id: 3,
@@ -50,8 +50,8 @@
               },
               {
                 id: 4,
-                text: 'Resume',
-                page: '/Resume'
+                text: 'About',
+                page: '/About'
               }
 
             ]

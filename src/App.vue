@@ -1,5 +1,19 @@
 <template>
+<!---
+TODO
+- Refactor code to make it professional looking, efficient, and nice
+  - Globalized necessary stylings and fix some html classes and IDs, DONT REPEAT YOURSELF (Maybe use SCSS?)
+  - Separate some modeling/data scripts into other files, and import it
+  - Separate other necessary code, styling and put it into its own file
 
+- Start working on content for About, Contact pages and potentially add a Projects page (Lets finish this site up first)
+  - Remove hello world page
+  - Add skills page
+
+- Continue making the website look responsive and nice looking
+  - Try to fix the particlesJS component so it is interactive and NOT blocked by the App div
+
+--->
   <div id="app">
     <particlesJS></particlesJS>
     <transition name="router-anim" enter-active-class="animated fadeInRight" leave-active-class="fadeOutRight">
@@ -23,6 +37,7 @@
   import About from "./views/About";
   import Contact from "./views/Contact";
   import Resume from "./views/Resume";
+  import Skills from "./views/Skills";
 
 
 export default {
@@ -35,6 +50,7 @@ export default {
     ,About
     ,Contact
     ,Resume
+    ,Skills
 
   },
 

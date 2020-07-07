@@ -6,6 +6,7 @@ import HelloWorld from "../views/HelloWorld";
 import About from "../views/About";
 import Contact from "../views/Contact";
 import Resume from "../views/Resume";
+import Skills from "../views/Skills";
 
 Vue.use(Router);
 
@@ -21,9 +22,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/HelloWorld',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/Skills',
+      name: 'Skills',
+      component: Skills
     },
     {
       path: '/About',
