@@ -2,15 +2,14 @@
   <div class="wrapper">
     <div class="intro-box">
       <div class="box-content">
-        <div class="home-logo">
-          <img src="../assets/destiny-logo.png">
-        </div>
+
 
 
         <h1>Hello! I'm Daniel J Ramirez,</h1>
-        <h2>Welcome to my website!</h2>
-        <div class="sm-container">
-          <a href="https://github.com/djr52" target="_blank"><img class="icon-img" src="../assets/github-11-64.png"></a>
+        <h1>Welcome to my little website!</h1>
+        <div class="social-container">
+          <a href="https://github.com/djr52" target="_blank"><img class="icon-img" :src="github"></a>
+          <a href="https://www.linkedin.com/in/daniel-ramirez-993ab81a0/" target="_blank"><img class="icon-img" :src="linkedIn"></a>
         </div>
 
       </div>
@@ -21,29 +20,34 @@
 </template>
 
 <script>
+  import github from '../assets/github-11-64.png';
+  import linkedIn from '../assets/linkedin-logo-60.png'
 
     export default {
-        name: "Home"
+        name: "Home",
+      data(){
+
+          return {
+            github: github,
+            linkedIn: linkedIn
+          };
+
+      }
     }
 </script>
 
-<style scoped>
+<style>
   /*
   Temp font
    */
-  @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-  .wrapper{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-  }
   .intro-box{
     background-color: rgba(115, 115, 115, 0.7);
-    height: 420px;
-    width: 700px;
+    height: auto;
+    width: auto;
+    padding: 30px;
+
+    border: 1px solid white;
+    border-radius: 15px;
   }
   .box-content{
     text-align: center;
@@ -51,39 +55,25 @@
   .home-logo{
     padding: 20px;
   }
-  .sm-container{
-    display: flex;
-    -moz-box-pack: center;
-    justify-content: center;
-    -moz-box-align: center;
-    align-items: center;
+  .social-container{
+
     padding: 10px;
 
     width: 70%;
     background-color: rgba(0, 0, 0, 0.6);
 
-    margin: 0px auto;
+    margin: 0 auto;
     border-radius: 10px;
   }
   .icon-img{
     height: 50px;
     width: 50px;
-    color: #FFFFFF;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 10px;
   }
-  h1, h2 {
-
-    font-family: 'Oswald', sans-serif;
-    font-weight: normal;
-    color: #FFFFFF;
-  }
-
-
-  a {
-    color: #42b983;
-  }
-  html,
-  body{
-    height: 100%;
+  a{
+    padding-left: 10px;
   }
 
 </style>

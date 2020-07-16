@@ -10,7 +10,7 @@
       <b-navbar-nav fill="true">
         <router-link class="route-text lead text-light" v-for="routes in links"
                      v-bind:key="routes.id"
-                     :to="`${routes.page}`">{{routes.text}}</router-link>
+                     :to="`${routes.page}`"><span>{{routes.text}}</span></router-link>
       </b-navbar-nav>
       </b-collapse>
     </b-navbar>

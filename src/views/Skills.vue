@@ -1,7 +1,8 @@
 <template>
-  <div  id="skillWrapper">
+  <div  class="wrapper">
 
     <div>
+      <!--
 
         <ul id="skillList">
         <b-card-group deck>
@@ -15,6 +16,13 @@
 
 
         </ul>
+        -->
+      <b-card-group v-for="skill in skillSet" deck>
+        <b-card id="skillBox"bg-variant="dark">
+          <b-card-title>{{skill.skillTitle}}</b-card-title>
+          <b-card-text>{{skill.skills}}</b-card-text>
+        </b-card>
+      </b-card-group>
 
 
     </div>
@@ -30,30 +38,22 @@
 
       name: "Skills",
       data(){
+
         return{
           skillSet: skills
+
         }
 
       }
     }
 </script>
 
-<style scoped>
-  #skillWrapper{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #skillList li{
-    list-style: none;
-    display: inline;
-    float: left;
-  }
-  #skillBox{
-    display: block;
-    width: 50%;
+<style>
 
+  #skillBox{
+
+    width: auto;
+    margin: 10px;
 
     text-align: center;
 

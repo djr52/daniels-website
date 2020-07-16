@@ -1,5 +1,5 @@
 <template>
-  <div class="r-wrapper">
+  <div class="wrapper">
     <div class="r-content">
       <img :src="resume">
       <div id="download-link">
@@ -21,24 +21,11 @@
           }
       }
     }
-    /*
-    async function showPDF(pdf_url){
-      document.querySelector("#pdf-loader").style.display;
-      pdf_doc = await  pdfjsLib.getDocument({})
-    }
 
-     */
 </script>
 
-<style scoped>
-  .r-wrapper{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+<style>
 
-
-  }
   .r-content{
     height: 720px;
   }
