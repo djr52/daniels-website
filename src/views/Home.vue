@@ -7,6 +7,11 @@
 
         <h1>Hello! I'm Daniel J Ramirez,</h1>
         <h1>Welcome to my little website!</h1>
+        <div>
+          <span v-b-hover="handleHover">Add 1</span>
+          <p>The text above has been hovered {{ counter}} times.</p>
+
+        </div>
         <div class="social-container">
           <a href="https://github.com/djr52" target="_blank"><img class="icon-img" :src="github"></a>
           <a href="https://www.linkedin.com/in/daniel-ramirez-993ab81a0/" target="_blank"><img class="icon-img" :src="linkedIn"></a>
@@ -26,12 +31,23 @@
     export default {
         name: "Home",
       data(){
-
           return {
             github: github,
-            linkedIn: linkedIn
-          };
+            linkedIn: linkedIn,
+            counter: 0,
+          }
 
+      },
+      methods:{
+        handleHover(hovered){
+          if(hovered){
+            this.counter = 1
+          }
+          else{
+            this.counter = 0;
+          }
+
+        }
       }
     }
 </script>

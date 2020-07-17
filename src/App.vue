@@ -9,7 +9,7 @@ TODO
 - Start working on content for About, Contact pages and potentially add a Projects page (Lets finish this site up first)
 
 - Continue making the website look responsive and nice looking
-  - Try to fix the particlesJS component so it is interactive and NOT blocked by the App div
+  - Try to fix the particlesJS component so it is interactive and NOT blocked by the App div (or integrate it with a background)
   - Add exit transitions for pages
   - Add micro animations for navbar
 --->

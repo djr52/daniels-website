@@ -10,7 +10,7 @@
       <b-navbar-nav fill="true">
         <router-link class="route-text lead text-light" v-for="routes in links"
                      v-bind:key="routes.id"
-                     :to="`${routes.page}`"><span>{{routes.text}}</span></router-link>
+                     :to="`${routes.page}`"><a v-b-hover="handleHover" id="navBarTabs">{{routes.text}}</a></router-link>
       </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -20,12 +20,21 @@
 <script>
   import Avatar from "./Avatar";
 
-
     export default {
       name: "Navbar",
       components: {Avatar},
+
+      methods:{
+        handleHover(hovered){
+
+        }
+
+      },
       data(){
+
+
           return{
+            a: document.getElementById("navBarTabs"),
             links:[
 
               {
@@ -73,5 +82,6 @@
   .header{
     border-bottom: 5px solid #FFFFFF !important;
   }
+
 
 </style>
