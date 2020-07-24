@@ -5,22 +5,43 @@
   justify-content: center;
 
 }
+a{
+  padding-right: 10px;
+}
 a:hover{
- /*border: 1px solid white
- *
-  */
   text-decoration: none;
 }
-a#navBarTabs{
-  border-top: 1px solid white;
+#navCont{
+  position: relative;
 }
-a#navBarTabs:hover{
-  border-bottom: 1px solid white;
-  border-top: 1px solid rgba(250, 250, 250, .5);
-  animation-name: example;
-  animation-duration: 0.5s;
+#navCont .navBarItem:after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid white;
+  width: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-@keyframes example{
-  from{padding: 0}
-  to{padding-right: 30px}
+
+#navCont .navBarItem:hover:after {
+  width: 100%;
 }
+
+.highlight:before{
+  content: '';
+  display: block;
+  border-bottom: 3px solid white;
+  position: absolute;
+  right: 0;
+  width: 0;
+  animation: highlight_anim ease 0.3s forwards
+
+
+}
+@keyframes highlight_anim {
+  from{width: 0;}
+  to{width: 100%}
+}
+

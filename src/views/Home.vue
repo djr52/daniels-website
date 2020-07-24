@@ -8,13 +8,14 @@
         <h1>Hello! I'm Daniel J Ramirez,</h1>
         <h1>Welcome to my little website!</h1>
         <div>
-          <span v-b-hover="handleHover">Add 1</span>
-          <p>The text above has been hovered {{ counter}} times.</p>
+          <p>Check out my other projects/social media down below!</p>
 
         </div>
         <div class="social-container">
           <a href="https://github.com/djr52" target="_blank"><img class="icon-img" :src="github"></a>
           <a href="https://www.linkedin.com/in/daniel-ramirez-993ab81a0/" target="_blank"><img class="icon-img" :src="linkedIn"></a>
+          <a href="https://www.instagram.com/danny.r1221/" target="_blank"><img class="icon-img" :src="instag"></a>
+
         </div>
 
       </div>
@@ -26,7 +27,8 @@
 
 <script>
   import github from '../assets/github-11-64.png';
-  import linkedIn from '../assets/linkedin-logo-60.png'
+  import linkedIn from '../assets/linkedin-logo-60.png';
+  import instag from '../assets/instagram-logo-60.png';
 
     export default {
         name: "Home",
@@ -34,42 +36,27 @@
           return {
             github: github,
             linkedIn: linkedIn,
-            counter: 0,
+            instag: instag
           }
 
-      },
-      methods:{
-        handleHover(hovered){
-          if(hovered){
-            this.counter = 1
-          }
-          else{
-            this.counter = 0;
-          }
-
-        }
       }
+
     }
 </script>
 
 <style>
-  /*
-  Temp font
-   */
+
   .intro-box{
     background-color: rgba(115, 115, 115, 0.7);
     height: auto;
     width: auto;
-    padding: 30px;
+    padding: 20px 50px;
 
     border: 1px solid white;
     border-radius: 15px;
   }
   .box-content{
     text-align: center;
-  }
-  .home-logo{
-    padding: 20px;
   }
   .social-container{
 
@@ -90,6 +77,9 @@
   }
   a{
     padding-left: 10px;
+  }
+  h1{
+    text-shadow: 2px 2px 4px #000000;
   }
 
 </style>

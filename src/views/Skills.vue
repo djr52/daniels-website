@@ -17,7 +17,7 @@
 
         </ul>
         -->
-      <b-card-group v-for="skill in skillSet" deck>
+      <b-card-group v-for="skill in skillSet" v-bind:key="skill.id" deck>
         <b-card id="skillBox"bg-variant="dark">
           <b-card-title>{{skill.skillTitle}}</b-card-title>
           <b-card-text>{{skill.skills}}</b-card-text>

@@ -1,23 +1,27 @@
 <template>
   <div class="wrapper">
-    <p>
-      Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit.
-      Sed et tellus dictum, bibendum turpis a,
-      laoreet nunc. Ut non sem porttitor massa
-      euismod imperdiet quis a purus. Nullam mollis
-      sit amet arcu in posuere. Aliquam a diam blandit
-      felis tempus ullamcorper et in justo. Curabitur vitae
-      sapien gravida, ultrices turpis ac, cursus velit.
-      Quisque iaculis rhoncus nisl at blandit.
-      Class aptent taciti sociosqu ad litora torquent
-      per conubia nostra, per inceptos himenaeos.
-      Vivamus vestibulum dolor a mi imperdiet efficitur.
-      Ut tempor arcu at arcu vestibulum luctus et eget turpis.
-      Etiam eu ultrices nunc.
-      Praesent viverra ligula ex, id euismod eros maximus a.
-      Nulla a mauris eget orci aliquam malesuada.
-    </p>
+    <div id="aboutOne">
+      <h1>
+        Hello! Here's some stuff about me.
+      </h1>
+      <p>
+        As mentioned before, my name is Daniel Ramirez! I am a student currently attending New Jersey Institute of Technology, majoring in Information Systems.
+      </p>
+      <p>
+        The origin of my passion involves my love for computers and software, and my more recent interest of data. I love challenging myself and seeing the results of my persistence.
+      </p>
+      <p>
+        I wish to continue to further my experience and knowledge through my work and study!
+      </p>
+
+    </div>
+    <div id="aboutTwo">
+      <div class="aspects">Curious</div>
+      <div class="aspects">Persistent</div>
+      <div class="aspects">Optimistic</div>
+
+    </div>
+
   </div>
 </template>
 
@@ -28,5 +32,13 @@
 </script>
 
 <style scoped>
+  #aboutOne{
+    width: 50%;
+    border: 1px white solid;
+  }
+  #aboutTwo{
+    position: relative;
+    border: 1px white solid;
+  }
 
 </style>

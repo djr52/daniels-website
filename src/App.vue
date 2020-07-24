@@ -2,7 +2,7 @@
 <!---
 TODO
 - Refactor code to make it professional looking, efficient, and nice
-  - Globalized necessary stylings and fix some html classes and IDs, DONT REPEAT YOURSELF (Maybe use SCSS?)
+  - Globalized necessary stylings and fix some html classes and IDs, DONT REPEAT YOURSELF
   - Separate some modeling/data scripts into other files, and import it
   - Separate other necessary code, styling and put it into its own file
 
@@ -10,12 +10,15 @@ TODO
 
 - Continue making the website look responsive and nice looking
   - Try to fix the particlesJS component so it is interactive and NOT blocked by the App div (or integrate it with a background)
-  - Add exit transitions for pages
-  - Add micro animations for navbar
+  - Style up micro animations for navbar
 --->
   <div id="app" >
     <particlesJS :style="bg"></particlesJS>
-    <transition name="router-anim" enter-active-class="animated fadeInRight" leave-active-class="fadeOutRight">
+    <transition name="slide-left slide-right" mode="out-in">
+                <!-- For Animate.css
+               enter-class="animated fadeIn" enter-active-class="animated fadeInRight" enter-to-class="animated fadeOutLeft"
+               leave-class="animated fadeOut" leave-active-class="animated fadeOutLeft" leave-to-class="animated fadeInRight"
+               -->
       <router-view/>
     </transition>
 
@@ -28,6 +31,7 @@ TODO
 </template>
 
 <script>
+
   import Navbar from "./components/Navbar";
   import particlesJS from './components/ParticlesJS'
 
@@ -67,7 +71,6 @@ export default {
 <style >
 
   @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-  @import "https://cdn.jsdelivr.net/npm/animate.css@3.7.2";
 #app {
   font-family: 'Oswald', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -83,5 +86,25 @@ body{
   background-color: black;
 
 }
+  .slide-left-enter-active,
+  .slide-left-leave-active,
+  .slide-right-enter-active,
+  .slide-right-leave-active {
+    transition-duration: 0.5s;
+    transition-property: height, opacity, transform;
+    transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+    overflow: hidden;
+  }
 
+  .slide-left-enter,
+  .slide-right-leave-active {
+    opacity: 0;
+    transform: translate(-4em, 0);
+  }
+
+  .slide-left-leave-active,
+  .slide-right-enter {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
 </style>

@@ -7,10 +7,21 @@
       <b-navbar-brand class="spacing"><Avatar></Avatar></b-navbar-brand>
 
       <b-collapse id="nav-text-collapse" is-nav>
-      <b-navbar-nav fill="true">
-        <router-link class="route-text lead text-light" v-for="routes in links"
-                     v-bind:key="routes.id"
-                     :to="`${routes.page}`"><a v-b-hover="handleHover" id="navBarTabs">{{routes.text}}</a></router-link>
+      <b-navbar-nav>
+
+
+          <router-link class="route-text lead text-light" v-for="routes in links"
+                       v-bind:key="routes.id"
+                       :to="`${routes.page}`">
+            <div id="navCont">
+                               <span :class="{highlight:routes.text === selected, anim:routes.text === selected}"
+                                     @click="selected = routes.text" class="navBarItem">{{routes.text}}</span>
+            </div>
+   </router-link>
+          <!--GET ANIMATIONS TO WORK WITH SPECIFIC HOVERS and/or CLICKS-->
+
+
+
       </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -20,27 +31,23 @@
 <script>
   import Avatar from "./Avatar";
 
+
     export default {
       name: "Navbar",
       components: {Avatar},
 
-      methods:{
-        handleHover(hovered){
 
-        }
-
-      },
       data(){
 
 
           return{
-            a: document.getElementById("navBarTabs"),
+            selected: undefined,
             links:[
 
               {
                 id: 0,
                 text: 'Home',
-                page: '/'
+                page: '/',
               },
               {
                 id: 1,
@@ -74,6 +81,7 @@
   h2{
     color: black;
   }
+
   .route-text{
     Margin-right: 20px;
     font-family: Oswald;
