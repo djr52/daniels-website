@@ -5,7 +5,6 @@
       <form id="form" action="https://getsimpleform.com/messages?form_api_token=5aa36cf964d167e80156c701e48a3364" method="post" >
         <fieldset>
           <div>
-            <input type='hidden' name='redirect_to'  value='http://localhost:8080/#/Contact'>
             <input type="text" name="name" placeholder="Name" required v-model="name">
           </div>
           <div>
