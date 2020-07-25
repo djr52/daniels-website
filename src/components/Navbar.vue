@@ -51,8 +51,8 @@
               },
               {
                 id: 1,
-                text: 'Resume',
-                page: '/Resume'
+                text: 'About',
+                page: '/About'
               },
               {
                 id: 2,
@@ -61,13 +61,13 @@
               },
               {
                 id: 3,
-                text: 'Contact',
-                page: '/Contact'
+                text: 'Resume',
+                page: '/Resume'
               },
               {
                 id: 4,
-                text: 'About',
-                page: '/About'
+                text: 'Contact',
+                page: '/Contact'
               }
 
             ]

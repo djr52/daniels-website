@@ -15,7 +15,6 @@
           <a href="https://github.com/djr52" target="_blank"><img class="icon-img" :src="github"></a>
           <a href="https://www.linkedin.com/in/daniel-ramirez-993ab81a0/" target="_blank"><img class="icon-img" :src="linkedIn"></a>
           <a href="https://www.instagram.com/danny.r1221/" target="_blank"><img class="icon-img" :src="instag"></a>
-
         </div>
 
       </div>
@@ -26,7 +25,7 @@
 </template>
 
 <script>
-  import github from '../assets/github-11-64.png';
+  import github from '../assets/github-logo-60.png';
   import linkedIn from '../assets/linkedin-logo-60.png';
   import instag from '../assets/instagram-logo-60.png';
 
@@ -52,11 +51,12 @@
     width: auto;
     padding: 20px 50px;
 
-    border: 1px solid white;
     border-radius: 15px;
   }
   .box-content{
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+
   }
   .social-container{
 
@@ -71,15 +71,8 @@
   .icon-img{
     height: 50px;
     width: 50px;
-    padding: 3px;
-    border: 1px solid white;
-    border-radius: 10px;
+
   }
-  a{
-    padding-left: 10px;
-  }
-  h1{
-    text-shadow: 2px 2px 4px #000000;
-  }
+
 
 </style>

@@ -35,7 +35,6 @@ TODO
   import Navbar from "./components/Navbar";
   import particlesJS from './components/ParticlesJS'
 
-  import HelloWorld from "./views/HelloWorld";
   import Home from "./views/Home";
   import About from "./views/About";
   import Contact from "./views/Contact";
@@ -50,7 +49,6 @@ export default {
     particlesJS
     ,Navbar
     ,Home
-    ,HelloWorld
     ,About
     ,Contact
     ,Resume

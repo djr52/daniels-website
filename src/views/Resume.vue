@@ -3,7 +3,7 @@
     <div class="r-content">
       <img :src="resume">
       <div id="download-link">
-        <h3>Download a<a :href="resume" download="Resume.pdf">copy</a>!</h3>
+        <h3>Download a <a :href="resume" download="Resume.pdf">copy</a>!</h3>
       </div>
     </div>
   </div>
